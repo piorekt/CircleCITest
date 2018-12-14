@@ -3,9 +3,8 @@ jobs:
   build:
     working_directory: ~/temp
     docker:
-      - image: circle/node:7
+      - image: circleci/node:7
     steps:
       - checkout
       - run install 
       - run test
-      
